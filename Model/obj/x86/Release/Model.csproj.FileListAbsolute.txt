@@ -1,0 +1,6 @@
+D:\Code\FireBridCloud\Model\bin\Release\Model.dll
+D:\Code\FireBridCloud\Model\bin\Release\Model.pdb
+D:\Code\FireBridCloud\Model\obj\x86\Release\Model.Properties.Resources.resources
+D:\Code\FireBridCloud\Model\obj\x86\Release\Model.csproj.GenerateResource.Cache
+D:\Code\FireBridCloud\Model\obj\x86\Release\Model.dll
+D:\Code\FireBridCloud\Model\obj\x86\Release\Model.pdb

@@ -1,0 +1,51 @@
+D:\jomi file\stock project\stock\DBUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\jomi file\stock project\stock\DBUtility\obj\x86\Debug\DBUtility.Properties.Resources.resources
+D:\jomi file\stock project\stock\DBUtility\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\jomi file\stock project\stock\DBUtility\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\jomi file\stock project\stock\DBUtility\bin\Debug\DBUtility.dll
+D:\jomi file\stock project\stock\DBUtility\bin\Debug\DBUtility.pdb
+D:\jomi file\stock project\stock\DBUtility\obj\x86\Debug\DBUtility.dll
+D:\jomi file\stock project\stock\DBUtility\obj\x86\Debug\DBUtility.pdb
+D:\jomi\jomi file\stock project\stock\DBUtility\bin\Debug\DBUtility.dll
+D:\jomi\jomi file\stock project\stock\DBUtility\bin\Debug\DBUtility.pdb
+D:\jomi\jomi file\stock project\stock\DBUtility\obj\x86\Debug\DBUtility.csprojResolveAssemblyReference.cache
+D:\jomi\jomi file\stock project\stock\DBUtility\obj\x86\Debug\DBUtility.Properties.Resources.resources
+D:\jomi\jomi file\stock project\stock\DBUtility\obj\x86\Debug\DBUtility.csproj.GenerateResource.Cache
+D:\jomi\jomi file\stock project\stock\DBUtility\obj\x86\Debug\DBUtility.dll
+D:\jomi\jomi file\stock project\stock\DBUtility\obj\x86\Debug\DBUtility.pdb
+D:\jomi\jomi file\stock project (纯净版)\stock\DBUtility\bin\Debug\DBUtility.dll
+D:\jomi\jomi file\stock project (纯净版)\stock\DBUtility\bin\Debug\DBUtility.pdb
+D:\jomi\jomi file\stock project (纯净版)\stock\DBUtility\obj\x86\Debug\DBUtility.csprojResolveAssemblyReference.cache
+D:\jomi\jomi file\stock project (纯净版)\stock\DBUtility\obj\x86\Debug\DBUtility.Properties.Resources.resources
+D:\jomi\jomi file\stock project (纯净版)\stock\DBUtility\obj\x86\Debug\DBUtility.csproj.GenerateResource.Cache
+D:\jomi\jomi file\stock project (纯净版)\stock\DBUtility\obj\x86\Debug\DBUtility.dll
+D:\jomi\jomi file\stock project (纯净版)\stock\DBUtility\obj\x86\Debug\DBUtility.pdb
+D:\jomi\jomi file\7号店程序\DBUtility\bin\Debug\DBUtility.dll
+D:\jomi\jomi file\7号店程序\DBUtility\bin\Debug\DBUtility.pdb
+D:\jomi\jomi file\7号店程序\DBUtility\obj\x86\Debug\DBUtility.Properties.Resources.resources
+D:\jomi\jomi file\7号店程序\DBUtility\obj\x86\Debug\DBUtility.csproj.GenerateResource.Cache
+D:\jomi\jomi file\7号店程序\DBUtility\obj\x86\Debug\DBUtility.dll
+D:\jomi\jomi file\7号店程序\DBUtility\obj\x86\Debug\DBUtility.pdb
+D:\jomi\jomi file\练习\SevenShop\DBUtility\bin\Debug\DBUtility.dll
+D:\jomi\jomi file\练习\SevenShop\DBUtility\bin\Debug\DBUtility.pdb
+D:\jomi\jomi file\练习\SevenShop\DBUtility\obj\x86\Debug\DBUtility.Properties.Resources.resources
+D:\jomi\jomi file\练习\SevenShop\DBUtility\obj\x86\Debug\DBUtility.csproj.GenerateResource.Cache
+D:\jomi\jomi file\练习\SevenShop\DBUtility\obj\x86\Debug\DBUtility.dll
+D:\jomi\jomi file\练习\SevenShop\DBUtility\obj\x86\Debug\DBUtility.pdb
+D:\jomi\jomi file\练习\SevenShop\DBUtility\bin\Debug\System.Data.SQLite.dll
+D:\jomi\jomi file\练习\SevenShop\DBUtility\obj\x86\Debug\DBUtility.csprojResolveAssemblyReference.cache
+C:\Users\Augurit2228\Desktop\SevenShop\DBUtility\bin\Debug\DBUtility.dll
+C:\Users\Augurit2228\Desktop\SevenShop\DBUtility\bin\Debug\DBUtility.pdb
+C:\Users\Augurit2228\Desktop\SevenShop\DBUtility\bin\Debug\System.Data.SQLite.dll
+C:\Users\Augurit2228\Desktop\SevenShop\DBUtility\obj\x86\Debug\DBUtility.csprojResolveAssemblyReference.cache
+C:\Users\Augurit2228\Desktop\SevenShop\DBUtility\obj\x86\Debug\DBUtility.Properties.Resources.resources
+C:\Users\Augurit2228\Desktop\SevenShop\DBUtility\obj\x86\Debug\DBUtility.csproj.GenerateResource.Cache
+C:\Users\Augurit2228\Desktop\SevenShop\DBUtility\obj\x86\Debug\DBUtility.dll
+C:\Users\Augurit2228\Desktop\SevenShop\DBUtility\obj\x86\Debug\DBUtility.pdb
+D:\Code\练习\BeatTheMoneyFundByBandStock\DBUtility\bin\Debug\DBUtility.dll
+D:\Code\练习\BeatTheMoneyFundByBandStock\DBUtility\bin\Debug\DBUtility.pdb
+D:\Code\练习\BeatTheMoneyFundByBandStock\DBUtility\obj\x86\Debug\DBUtility.Properties.Resources.resources
+D:\Code\练习\BeatTheMoneyFundByBandStock\DBUtility\obj\x86\Debug\DBUtility.csproj.GenerateResource.Cache
+D:\Code\练习\BeatTheMoneyFundByBandStock\DBUtility\obj\x86\Debug\DBUtility.dll
+D:\Code\练习\BeatTheMoneyFundByBandStock\DBUtility\obj\x86\Debug\DBUtility.pdb
+D:\Code\练习\BeatTheMoneyFundByBandStock\DBUtility\obj\x86\Debug\DBUtility.csprojResolveAssemblyReference.cache

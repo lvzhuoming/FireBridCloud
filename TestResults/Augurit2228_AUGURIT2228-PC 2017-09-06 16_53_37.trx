@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="07c790bc-31b5-4b10-8e19-026abe61534a" name="Augurit2228@AUGURIT2228-PC 2017-09-06 16:53:37" runUser="Augurit2228-PC\Augurit2228" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="01b32efd-15da-426c-a44a-71b133e2d469">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Augurit2228_AUGURIT2228-PC 2017-09-06 16_53_37">
+      <DeploymentItem filename="D:\Code\FireBridCloud\Debug\FireBridCloud.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2017-09-06T16:53:37.4496002+08:00" queuing="2017-09-06T16:53:40.0126002+08:00" start="2017-09-06T16:53:40.3166002+08:00" finish="2017-09-06T16:54:23.9966002+08:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="4" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="3" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="AUGURIT2228-PC" outcome="Error" timestamp="2017-09-06T16:54:23.9956002+08:00">
+        <Text>测试宿主进程意外退出。</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="d:\code\firebridcloud\testproject1\bin\debug\unittest.dll" id="062ce8e3-dd19-e21c-e0aa-883050ed4a66">
+      <Execution id="1df96668-dde1-401a-8063-daabd35fdd14" />
+      <TestMethod codeBase="D:/Code/FireBridCloud/TestProject1/bin/Debug/UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTest.TestFunction, UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="TestMethod2" storage="d:\code\firebridcloud\testproject1\bin\debug\unittest.dll" id="cc4b2870-db57-f2ab-711b-0c113db46ddb">
+      <Execution id="83c12578-70b7-45ba-82fe-a5f4bfda9a34" />
+      <TestMethod codeBase="D:/Code/FireBridCloud/TestProject1/bin/Debug/UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTest.TestFunction, UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod2" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="d:\code\firebridcloud\testproject1\bin\debug\testproject1.dll" id="7871604a-5d73-88c1-26dd-a0b80b1e4757">
+      <Execution id="be90165e-8ab1-4ee0-a3db-c4df16478170" />
+      <TestMethod codeBase="D:/Code/FireBridCloud/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.LvzhuomingFistTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="TestMethod2" storage="d:\code\firebridcloud\testproject1\bin\debug\testproject1.dll" id="84c14dc2-f672-1d28-75b2-5c55b6030d74">
+      <Execution id="b74490ad-d7be-4e4b-8835-2c93d47146f3" />
+      <TestMethod codeBase="D:/Code/FireBridCloud/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.LvzhuomingFistTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod2" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="062ce8e3-dd19-e21c-e0aa-883050ed4a66" executionId="1df96668-dde1-401a-8063-daabd35fdd14" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7871604a-5d73-88c1-26dd-a0b80b1e4757" executionId="be90165e-8ab1-4ee0-a3db-c4df16478170" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="84c14dc2-f672-1d28-75b2-5c55b6030d74" executionId="b74490ad-d7be-4e4b-8835-2c93d47146f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cc4b2870-db57-f2ab-711b-0c113db46ddb" executionId="83c12578-70b7-45ba-82fe-a5f4bfda9a34" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="1df96668-dde1-401a-8063-daabd35fdd14" testId="062ce8e3-dd19-e21c-e0aa-883050ed4a66" testName="TestMethod1" computerName="AUGURIT2228-PC" duration="00:00:43.5270000" startTime="2017-09-06T16:53:40.4696002+08:00" endTime="2017-09-06T16:54:23.9966002+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1df96668-dde1-401a-8063-daabd35fdd14">
+    </UnitTestResult>
+    <UnitTestResult executionId="be90165e-8ab1-4ee0-a3db-c4df16478170" testId="7871604a-5d73-88c1-26dd-a0b80b1e4757" testName="TestMethod1" computerName="AUGURIT2228-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="be90165e-8ab1-4ee0-a3db-c4df16478170">
+    </UnitTestResult>
+    <UnitTestResult executionId="b74490ad-d7be-4e4b-8835-2c93d47146f3" testId="84c14dc2-f672-1d28-75b2-5c55b6030d74" testName="TestMethod2" computerName="AUGURIT2228-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b74490ad-d7be-4e4b-8835-2c93d47146f3">
+    </UnitTestResult>
+    <UnitTestResult executionId="83c12578-70b7-45ba-82fe-a5f4bfda9a34" testId="cc4b2870-db57-f2ab-711b-0c113db46ddb" testName="TestMethod2" computerName="AUGURIT2228-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="83c12578-70b7-45ba-82fe-a5f4bfda9a34">
+    </UnitTestResult>
+  </Results>
+</TestRun>

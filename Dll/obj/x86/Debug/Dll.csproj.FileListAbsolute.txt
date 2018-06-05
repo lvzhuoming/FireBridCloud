@@ -1,0 +1,9 @@
+C:\Users\Augurit2228\Desktop\FireBridCloud\Dll\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Augurit2228\Desktop\FireBridCloud\Debug\Dll.dll
+C:\Users\Augurit2228\Desktop\FireBridCloud\Debug\Dll.pdb
+C:\Users\Augurit2228\Desktop\FireBridCloud\Dll\obj\x86\Debug\Dll.dll
+C:\Users\Augurit2228\Desktop\FireBridCloud\Dll\obj\x86\Debug\Dll.pdb
+D:\Code\FireBridCloud\Debug\Dll.dll
+D:\Code\FireBridCloud\Debug\Dll.pdb
+D:\Code\FireBridCloud\Dll\obj\x86\Debug\Dll.dll
+D:\Code\FireBridCloud\Dll\obj\x86\Debug\Dll.pdb

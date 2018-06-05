@@ -1,0 +1,4 @@
+C:\Users\Augurit2228\Desktop\FireBridCloud\ASP.NetForStock\ASP.NetForStock\bin\ASP.NetForStock.dll
+C:\Users\Augurit2228\Desktop\FireBridCloud\ASP.NetForStock\ASP.NetForStock\bin\ASP.NetForStock.pdb
+C:\Users\Augurit2228\Desktop\FireBridCloud\ASP.NetForStock\ASP.NetForStock\obj\Debug\ASP.NetForStock.dll
+C:\Users\Augurit2228\Desktop\FireBridCloud\ASP.NetForStock\ASP.NetForStock\obj\Debug\ASP.NetForStock.pdb

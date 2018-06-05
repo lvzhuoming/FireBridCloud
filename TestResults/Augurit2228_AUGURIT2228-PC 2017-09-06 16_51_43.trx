@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e8f65c03-b733-478b-b4fa-c055ed33243e" name="Augurit2228@AUGURIT2228-PC 2017-09-06 16:51:43" runUser="Augurit2228-PC\Augurit2228" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="01b32efd-15da-426c-a44a-71b133e2d469">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment userDeploymentRoot="D:\Code\FireBridCloud\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="Augurit2228_AUGURIT2228-PC 2017-09-06 16_51_43">
+      <DeploymentItem filename="D:\Code\FireBridCloud\Debug\FireBridCloud.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2017-09-06T16:51:43.8476002+08:00" queuing="2017-09-06T16:51:43.8896002+08:00" start="2017-09-06T16:51:43.8986002+08:00" finish="2017-09-06T16:51:44.2166002+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod2" storage="d:\code\firebridcloud\testproject1\bin\debug\unittest.dll" id="cc4b2870-db57-f2ab-711b-0c113db46ddb">
+      <Execution id="29162e06-417f-4889-8ca9-7e9ebdf61c94" />
+      <TestMethod codeBase="D:/Code/FireBridCloud/TestProject1/bin/Debug/UnitTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTest.TestFunction, UnitTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod2" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="cc4b2870-db57-f2ab-711b-0c113db46ddb" executionId="29162e06-417f-4889-8ca9-7e9ebdf61c94" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="29162e06-417f-4889-8ca9-7e9ebdf61c94" testId="cc4b2870-db57-f2ab-711b-0c113db46ddb" testName="TestMethod2" computerName="AUGURIT2228-PC" duration="00:00:00.0567991" startTime="2017-09-06T16:51:43.9006002+08:00" endTime="2017-09-06T16:51:44.2046002+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="29162e06-417f-4889-8ca9-7e9ebdf61c94">
+    </UnitTestResult>
+  </Results>
+</TestRun>

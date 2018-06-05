@@ -1,0 +1,4 @@
+D:\Code\FireBridCloud\Dll\bin\Release\Dll.dll
+D:\Code\FireBridCloud\Dll\bin\Release\Dll.pdb
+D:\Code\FireBridCloud\Dll\obj\x86\Release\Dll.dll
+D:\Code\FireBridCloud\Dll\obj\x86\Release\Dll.pdb

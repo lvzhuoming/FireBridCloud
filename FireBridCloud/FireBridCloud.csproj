@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F33C6ED8-59DC-4168-A310-D1A3EC519C04}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FireBridCloud</RootNamespace>
+    <AssemblyName>FireBridCloud</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>FireBridCloud.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Chartlet, Version=0.9.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\Chartlet.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=10.5.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IrisSkin2">
+      <HintPath>..\Dll\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="NPlot, Version=0.9.10.0, Culture=neutral, PublicKeyToken=4eda430eb4395eb1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\NPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\Dll\NPOI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\Dll\NPOI.OOXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\Dll\NPOI.OpenXml4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.99.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BwExpectStock.cs" />
+    <Compile Include="BwMain.cs" />
+    <Compile Include="CommonFunction.cs" />
+    <Compile Include="CSVFileHelper.cs" />
+    <Compile Include="ExcelMakerNPOI.cs" />
+    <Compile Include="FrmEquation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEquation.Designer.cs">
+      <DependentUpon>FrmEquation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKLine.Designer.cs">
+      <DependentUpon>FrmKLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmResult.designer.cs">
+      <DependentUpon>FrmResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetHoldingRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetHoldingRate.Designer.cs">
+      <DependentUpon>FrmSetHoldingRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStockChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStockChart.Designer.cs">
+      <DependentUpon>FrmStockChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStockExpect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStockExpect.Designer.cs">
+      <DependentUpon>FrmStockExpect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStockHoldAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStockHoldAdd.Designer.cs">
+      <DependentUpon>FrmStockHoldAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStrategy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStrategy.Designer.cs">
+      <DependentUpon>FrmStrategy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWave.Designer.cs">
+      <DependentUpon>FrmWave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrmSetAsset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetAsset.Designer.cs">
+      <DependentUpon>FrmSetAsset.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmEquation.resx">
+      <DependentUpon>FrmEquation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKLine.resx">
+      <DependentUpon>FrmKLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmResult.resx">
+      <DependentUpon>FrmResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetHoldingRate.resx">
+      <DependentUpon>FrmSetHoldingRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStockChart.resx">
+      <DependentUpon>FrmStockChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStockExpect.resx">
+      <DependentUpon>FrmStockExpect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStockHoldAdd.resx">
+      <DependentUpon>FrmStockHoldAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStrategy.resx">
+      <DependentUpon>FrmStrategy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWave.resx">
+      <DependentUpon>FrmWave.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FrmSetAsset.resx">
+      <DependentUpon>FrmSetAsset.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BeatTheMoneyFundByBandStock\BeatTheMoneyFundByBandStock.csproj">
+      <Project>{0F7B232E-8739-4787-A47E-6678F40F976E}</Project>
+      <Name>BeatTheMoneyFundByBandStock</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{E2F5D83A-B760-4C76-A98E-AF115EDF9493}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controls\Controls.csproj">
+      <Project>{B0F73FC7-A7B1-4F10-891E-80D5D16B18F8}</Project>
+      <Name>Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{82D65E28-213B-4552-94A4-0E1B32935942}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dll\Dll.csproj">
+      <Project>{F222E45E-AA81-4F54-9E1B-4CAEBC228EEC}</Project>
+      <Name>Dll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{FCC62AFF-D145-40BC-8B84-A2A6D133A011}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SqliteDBUtility\SqliteDBUtility.csproj">
+      <Project>{9DE40520-7642-4EAD-A214-D8D8AE11ED52}</Project>
+      <Name>SqliteDBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{2A430DD4-D771-4022-8C11-E8DBAF40165B}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FireBridCloud.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

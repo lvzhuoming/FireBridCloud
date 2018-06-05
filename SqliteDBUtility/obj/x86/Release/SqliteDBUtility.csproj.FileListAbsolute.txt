@@ -1,0 +1,9 @@
+D:\Code\FireBridCloud\SqliteDBUtility\bin\Release\SqliteDBUtility.dll
+D:\Code\FireBridCloud\SqliteDBUtility\bin\Release\SqliteDBUtility.pdb
+D:\Code\FireBridCloud\SqliteDBUtility\bin\Release\System.Data.SQLite.dll
+D:\Code\FireBridCloud\SqliteDBUtility\bin\Release\Utility.dll
+D:\Code\FireBridCloud\SqliteDBUtility\bin\Release\Utility.pdb
+D:\Code\FireBridCloud\SqliteDBUtility\obj\x86\Release\SqliteDBUtility.Properties.Resources.resources
+D:\Code\FireBridCloud\SqliteDBUtility\obj\x86\Release\SqliteDBUtility.csproj.GenerateResource.Cache
+D:\Code\FireBridCloud\SqliteDBUtility\obj\x86\Release\SqliteDBUtility.dll
+D:\Code\FireBridCloud\SqliteDBUtility\obj\x86\Release\SqliteDBUtility.pdb

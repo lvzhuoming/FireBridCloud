@@ -1,0 +1,14 @@
+D:\Code\FireBridCloud\Debug\ChineseCalender.exe
+D:\Code\FireBridCloud\Debug\ChineseCalender.pdb
+D:\Code\FireBridCloud\ChineseCalender\obj\x86\Debug\ChineseCalender.FrmMessage.resources
+D:\Code\FireBridCloud\ChineseCalender\obj\x86\Debug\ChineseCalender.FrmMessageMain.resources
+D:\Code\FireBridCloud\ChineseCalender\obj\x86\Debug\ChineseCalender.csproj.GenerateResource.Cache
+D:\Code\FireBridCloud\ChineseCalender\obj\x86\Debug\ChineseCalender.exe
+D:\Code\FireBridCloud\ChineseCalender\obj\x86\Debug\ChineseCalender.pdb
+D:\Code\FireBridCloud\ChineseCalender\obj\x86\Debug\ChineseCalender.AboutBox.resources
+D:\Code\FireBridCloud\ChineseCalender\obj\x86\Debug\ChineseCalender.Calender.resources
+D:\Code\FireBridCloud\ChineseCalender\obj\x86\Debug\ChineseCalender.FrmRemark.resources
+D:\Code\FireBridCloud\ChineseCalender\obj\x86\Debug\ChineseCalender.Properties.Resources.resources
+D:\Code\FireBridCloud\ChineseCalenderbak\obj\x86\Debug\ChineseCalender.exe
+D:\Code\FireBridCloud\ChineseCalenderbak\obj\x86\Debug\ChineseCalender.pdb
+D:\Code\FireBridCloud\ChineseCalender\obj\x86\Debug\ChineseCalender.csprojResolveAssemblyReference.cache

@@ -1,0 +1,7 @@
+D:\Code\FireBridCloud\SqliteDBUtility\obj\x86\Debug\SqliteDBUtility.Properties.Resources.resources
+D:\Code\FireBridCloud\SqliteDBUtility\obj\x86\Debug\SqliteDBUtility.csproj.GenerateResource.Cache
+D:\Code\FireBridCloud\Debug\SqliteDBUtility.dll
+D:\Code\FireBridCloud\Debug\SqliteDBUtility.pdb
+D:\Code\FireBridCloud\SqliteDBUtility\obj\x86\Debug\SqliteDBUtility.dll
+D:\Code\FireBridCloud\SqliteDBUtility\obj\x86\Debug\SqliteDBUtility.pdb
+D:\Code\FireBridCloud\SqliteDBUtility\obj\x86\Debug\SqliteDBUtility.csprojResolveAssemblyReference.cache
