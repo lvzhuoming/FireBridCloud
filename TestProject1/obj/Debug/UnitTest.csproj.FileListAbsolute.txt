@@ -26,3 +26,5 @@ D:\Code\FireBridCloud\TestProject1\obj\Debug\UnitTest.dll
 D:\Code\FireBridCloud\TestProject1\obj\Debug\UnitTest.pdb
 D:\Code\FireBridCloud\TestProject1\bin\Debug\Chartlet.dll
 D:\Code\FireBridCloud\TestProject1\bin\Debug\Chartlet.pdb
+D:\Code\FireBridCloud\TestProject1\bin\Debug\ChineseCalender.exe
+D:\Code\FireBridCloud\TestProject1\bin\Debug\ChineseCalender.pdb

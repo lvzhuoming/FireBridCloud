@@ -131,6 +131,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Controls\Controls.csproj">
+      <Project>{B0F73FC7-A7B1-4F10-891E-80D5D16B18F8}</Project>
+      <Name>Controls</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SqliteDBUtility\SqliteDBUtility.csproj">
       <Project>{9DE40520-7642-4EAD-A214-D8D8AE11ED52}</Project>
       <Name>SqliteDBUtility</Name>

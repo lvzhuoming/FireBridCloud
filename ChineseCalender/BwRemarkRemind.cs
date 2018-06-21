@@ -16,6 +16,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
+
 //using Utility;
 
 namespace ChineseCalender
@@ -40,8 +42,9 @@ namespace ChineseCalender
         //public static UpateMarketInfo UpateMarket = null;
 
         //必须要用委托，因为UI只能在主线程里刷新
-        public delegate void ShowRise();
+        public delegate void ShowRise(Form frm);
         public static ShowRise ShowRiseForm=null;
+        public static Form fatherForm = null;
 
         public static System.Timers.Timer timer = new System.Timers.Timer(3000);   //实例化Timer类，设置间隔时间为10000毫秒；  
         public static BackgroundWorker m_BackgroundWorker = new BackgroundWorker(); // 实例化后台对象;
@@ -75,7 +78,7 @@ namespace ChineseCalender
         public static void DoWork(object sender, DoWorkEventArgs e)
         {
             if(ShowRiseForm!=null)
-                ShowRiseForm();
+                ShowRiseForm(fatherForm);
 
 
             //bool canConnetInternet = false;

@@ -1,0 +1,20 @@
+
+Debug/ChineseCalender.exe
+*.pdb
+*.Cache
+TestResults/Augurit2228_AUGURIT2228-PC 2018-06-06 11_53_58.trx
+TestResults/Augurit2228_AUGURIT2228-PC 2018-06-06 11_53_58/Out/BeatTheMoneyFundByBandStock.exe
+TestResults/Augurit2228_AUGURIT2228-PC 2018-06-06 11_53_58/Out/Business.dll
+TestResults/Augurit2228_AUGURIT2228-PC 2018-06-06 11_53_58/Out/Chartlet.dll
+TestResults/Augurit2228_AUGURIT2228-PC 2018-06-06 11_53_58/Out/Controls.dll
+TestResults/Augurit2228_AUGURIT2228-PC 2018-06-06 11_53_58/Out/DBUtility.dll
+TestResults/Augurit2228_AUGURIT2228-PC 2018-06-06 11_53_58/Out/FireBridCloud.exe
+TestResults/Augurit2228_AUGURIT2228-PC 2018-06-06 11_53_58/Out/Model.dll
+TestResults/Augurit2228_AUGURIT2228-PC 2018-06-06 11_53_58/Out/NPlot.dll
+TestResults/Augurit2228_AUGURIT2228-PC 2018-06-06 11_53_58/Out/NPOI.dll
+TestResults/Augurit2228_AUGURIT2228-PC 2018-06-06 11_53_58/Out/NPOI.OOXML.dll
+TestResults/Augurit2228_AUGURIT2228-PC 2018-06-06 11_53_58/Out/NPOI.OpenXml4Net.dll
+TestResults/Augurit2228_AUGURIT2228-PC 2018-06-06 11_53_58/Out/SqliteDBUtility.dll
+TestResults/Augurit2228_AUGURIT2228-PC 2018-06-06 11_53_58/Out/System.Data.SQLite.dll
+TestResults/Augurit2228_AUGURIT2228-PC 2018-06-06 11_53_58/Out/unittest.dll
+TestResults/Augurit2228_AUGURIT2228-PC 2018-06-06 11_53_58/Out/Utility.dll

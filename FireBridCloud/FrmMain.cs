@@ -14,6 +14,7 @@ using System.Windows.Forms;
 using BeatTheMoneyFundByBandStock;
 using DBUtility;
 using Business;
+using ChineseCalender;
 using FanG;
 using Model;
 using NPOI.SS.UserModel;
@@ -126,6 +127,11 @@ namespace FireBridCloud
             //提示上下买入卖出价格用距离
             SetTip();
             SetChart(dt_holdstock);
+
+
+            BwRemarkRemind.ShowRiseForm = ChineseCalender.CommonFunction.ShowRiseMethod;
+            BwRemarkRemind.fatherForm = this;
+            BwRemarkRemind.OnStart();
         }
         /// <summary>
         /// 根据表格的数据设置图形
@@ -691,6 +697,12 @@ namespace FireBridCloud
             }
 
 
+        }
+
+        private void btnNotice_Click(object sender, EventArgs e)
+        {
+            Calender frm = new Calender();
+            frm.Show( );
         }
 
     }

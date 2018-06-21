@@ -10,6 +10,7 @@
 * ========================================================================
 */
 using System;
+using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
@@ -49,7 +50,8 @@ namespace ChineseCalender
                     panelDateInfo = control as Panel;
                 }
             }
-            BwRemarkRemind.ShowRiseForm = ShowRiseMethod;
+            BwRemarkRemind.ShowRiseForm = CommonFunction.ShowRiseMethod;
+            BwRemarkRemind.fatherForm = this;
             BwRemarkRemind.OnStart();
 
         }
@@ -449,89 +451,5 @@ namespace ChineseCalender
             about.ShowDialog();
         }
 
-        public  void ShowRiseMethod()
-        {
-            try
-            {
-                Invoke(new MethodInvoker(delegate()
-                {
-                    DateTime dt = DateTime.Now.AddDays(-1);
-                    string remark = string.Empty;
-                    //向前走6步
-                    for (int i = 0; i < 2; i++)
-                    {
-                        string value = CommonFunction.GetDateRemark(dt.AddDays(i));
-                        if (!string.IsNullOrEmpty(value))
-                            remark += value + "\r\n";
-                    }
-                    if (!string.IsNullOrEmpty(remark))
-                    {
-                        FrmMessage ms = new FrmMessage();//要弹出的消息框  
-
-                        foreach (Form frm in System.Windows.Forms.Application.OpenForms)
-                        {
-                            if (frm is FrmMessage)
-                            {
-                                return;
-                            }
-                        }
-
-                        ms.Show();
-                        //Point pStart = new Point(Screen.PrimaryScreen.WorkingArea.Width - ms.Width, Screen.PrimaryScreen.WorkingArea.Height);
-                        //ms.PointToClient(pStart);
-                        ms.txtRemark.Text = remark;
-                        Thread thread = new Thread(t =>
-                        {
-                            try
-                            {
-                                foreach (Form frm in System.Windows.Forms.Application.OpenForms)
-                                {
-                                    if (frm is FrmMessage)
-                                    {
-                                        Point p = new Point(Screen.PrimaryScreen.WorkingArea.Width - frm.Width, Screen.PrimaryScreen.WorkingArea.Height);
-                                        frm.PointToClient(p);
-                                        frm.Location = new Point(p.X, p.Y);
-                                        for (int i = 0; i < frm.Height; i++)
-                                        {
-                                            if (System.Windows.Forms.Control.MousePosition.X > frm.Location.X && System.Windows.Forms.Control.MousePosition.Y > frm.Location.Y)
-                                            {
-                                                frm.Location = new Point(p.X, p.Y - frm.Height);
-                                                break;
-                                            }
-                                            try
-                                            {
-                                                //frm.Location = p;
-                                                frm.Location = new Point(p.X, p.Y - i);
-                                                System.Threading.Thread.Sleep(10);
-                                            }
-                                            catch (Exception ex)
-                                            {
-
-                                            }
-
-                                        }
-                                    }
-                                }
-                            }
-                            catch (Exception)
-                            {
-
-                                return;
-                            }
-
-
-                        });
-                        thread.Start();
-
-                    }
-                }));
-            }
-            catch (Exception)
-            {
-                return;
-            }
-      
-
-        }
     }
 }

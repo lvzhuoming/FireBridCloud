@@ -221,6 +221,10 @@
       <Project>{E2F5D83A-B760-4C76-A98E-AF115EDF9493}</Project>
       <Name>Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ChineseCalender\ChineseCalender.csproj">
+      <Project>{096F007E-1179-42AC-8A92-C225EB042A2E}</Project>
+      <Name>ChineseCalender</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Controls\Controls.csproj">
       <Project>{B0F73FC7-A7B1-4F10-891E-80D5D16B18F8}</Project>
       <Name>Controls</Name>

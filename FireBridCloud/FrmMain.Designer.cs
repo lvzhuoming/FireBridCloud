@@ -60,6 +60,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnWave = new DevComponents.DotNetBar.ButtonX();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.btnValueInvest = new DevComponents.DotNetBar.ButtonX();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -68,7 +69,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.chartlet1 = new FanG.Chartlet();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.btnNotice = new DevComponents.DotNetBar.ButtonX();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_HoldStock)).BeginInit();
             this.panel2.SuspendLayout();
@@ -112,6 +113,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnNotice);
             this.panel2.Controls.Add(this.txtHoldAdd);
             this.panel2.Controls.Add(this.btnStockBw);
             this.panel2.Controls.Add(this.label4);
@@ -381,6 +383,16 @@
             this.panel1.Size = new System.Drawing.Size(741, 92);
             this.panel1.TabIndex = 10;
             // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.Location = new System.Drawing.Point(420, 53);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(106, 23);
+            this.buttonX1.TabIndex = 14;
+            this.buttonX1.Text = "穷举获取股票代码";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
             // btnValueInvest
             // 
             this.btnValueInvest.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -570,15 +582,15 @@
             this.chartlet1.YLabels.UnitText = "YLabelsUnit";
             this.chartlet1.YLabels.ValueFormat = "0.0";
             // 
-            // buttonX1
+            // btnNotice
             // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.Location = new System.Drawing.Point(420, 53);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(106, 23);
-            this.buttonX1.TabIndex = 14;
-            this.buttonX1.Text = "穷举获取股票代码";
-            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            this.btnNotice.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnNotice.Location = new System.Drawing.Point(627, 10);
+            this.btnNotice.Name = "btnNotice";
+            this.btnNotice.Size = new System.Drawing.Size(95, 23);
+            this.btnNotice.TabIndex = 18;
+            this.btnNotice.Text = "日历提醒";
+            this.btnNotice.Click += new System.EventHandler(this.btnNotice_Click);
             // 
             // FrmMain
             // 
@@ -588,6 +600,7 @@
             this.Controls.Add(this.statusStripForMain);
             this.Controls.Add(this.tabControl1);
             this.DoubleBuffered = true;
+            this.EnableGlass = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -655,6 +668,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private FanG.Chartlet chartlet1;
         private DevComponents.DotNetBar.ButtonX buttonX1;
+        private DevComponents.DotNetBar.ButtonX btnNotice;
 
     }
 }
