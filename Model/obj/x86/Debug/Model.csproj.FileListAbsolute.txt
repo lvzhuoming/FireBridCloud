@@ -23,3 +23,9 @@ D:\Code\FireBridCloud\Model\obj\x86\Debug\Model.Properties.Resources.resources
 D:\Code\FireBridCloud\Model\obj\x86\Debug\Model.csproj.GenerateResource.Cache
 D:\Code\FireBridCloud\Model\obj\x86\Debug\Model.dll
 D:\Code\FireBridCloud\Model\obj\x86\Debug\Model.pdb
+E:\MyCode\FireBridCloud\Debug\Model.dll
+E:\MyCode\FireBridCloud\Debug\Model.pdb
+E:\MyCode\FireBridCloud\Model\obj\x86\Debug\Model.Properties.Resources.resources
+E:\MyCode\FireBridCloud\Model\obj\x86\Debug\Model.csproj.GenerateResource.Cache
+E:\MyCode\FireBridCloud\Model\obj\x86\Debug\Model.dll
+E:\MyCode\FireBridCloud\Model\obj\x86\Debug\Model.pdb

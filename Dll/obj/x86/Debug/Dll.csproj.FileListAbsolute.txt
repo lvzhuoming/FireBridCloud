@@ -7,3 +7,7 @@ D:\Code\FireBridCloud\Debug\Dll.dll
 D:\Code\FireBridCloud\Debug\Dll.pdb
 D:\Code\FireBridCloud\Dll\obj\x86\Debug\Dll.dll
 D:\Code\FireBridCloud\Dll\obj\x86\Debug\Dll.pdb
+E:\MyCode\FireBridCloud\Debug\Dll.dll
+E:\MyCode\FireBridCloud\Debug\Dll.pdb
+E:\MyCode\FireBridCloud\Dll\obj\x86\Debug\Dll.dll
+E:\MyCode\FireBridCloud\Dll\obj\x86\Debug\Dll.pdb

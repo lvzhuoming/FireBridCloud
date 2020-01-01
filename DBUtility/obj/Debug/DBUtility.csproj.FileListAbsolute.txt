@@ -4,3 +4,9 @@ D:\Code\FireBridCloud\Debug\DBUtility.pdb
 D:\Code\FireBridCloud\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
 D:\Code\FireBridCloud\DBUtility\obj\Debug\DBUtility.dll
 D:\Code\FireBridCloud\DBUtility\obj\Debug\DBUtility.pdb
+E:\MyCode\FireBridCloud\Debug\DataConn.xml
+E:\MyCode\FireBridCloud\Debug\DBUtility.dll
+E:\MyCode\FireBridCloud\Debug\DBUtility.pdb
+E:\MyCode\FireBridCloud\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+E:\MyCode\FireBridCloud\DBUtility\obj\Debug\DBUtility.dll
+E:\MyCode\FireBridCloud\DBUtility\obj\Debug\DBUtility.pdb

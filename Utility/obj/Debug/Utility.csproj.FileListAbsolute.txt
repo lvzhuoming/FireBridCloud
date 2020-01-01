@@ -7,3 +7,7 @@ D:\Code\FireBridCloud\Utility\bin\Debug\Utility.dll
 D:\Code\FireBridCloud\Utility\bin\Debug\Utility.pdb
 D:\Code\FireBridCloud\Utility\obj\Debug\Utility.dll
 D:\Code\FireBridCloud\Utility\obj\Debug\Utility.pdb
+E:\MyCode\FireBridCloud\Utility\bin\Debug\Utility.dll
+E:\MyCode\FireBridCloud\Utility\bin\Debug\Utility.pdb
+E:\MyCode\FireBridCloud\Utility\obj\Debug\Utility.dll
+E:\MyCode\FireBridCloud\Utility\obj\Debug\Utility.pdb

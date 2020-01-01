@@ -39,3 +39,11 @@ D:\Code\FireBridCloud\Business\obj\x86\Debug\Business.Properties.Resources.resou
 D:\Code\FireBridCloud\Business\obj\x86\Debug\Business.csproj.GenerateResource.Cache
 D:\Code\FireBridCloud\Business\obj\x86\Debug\Business.dll
 D:\Code\FireBridCloud\Business\obj\x86\Debug\Business.pdb
+E:\MyCode\FireBridCloud\Debug\DataConn.xml
+E:\MyCode\FireBridCloud\Debug\Business.dll
+E:\MyCode\FireBridCloud\Debug\Business.pdb
+E:\MyCode\FireBridCloud\Business\obj\x86\Debug\Business.csprojResolveAssemblyReference.cache
+E:\MyCode\FireBridCloud\Business\obj\x86\Debug\Business.Properties.Resources.resources
+E:\MyCode\FireBridCloud\Business\obj\x86\Debug\Business.csproj.GenerateResource.Cache
+E:\MyCode\FireBridCloud\Business\obj\x86\Debug\Business.dll
+E:\MyCode\FireBridCloud\Business\obj\x86\Debug\Business.pdb
