@@ -43,6 +43,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button3 = new System.Windows.Forms.Button();
+            this.txtSkipRate = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +68,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 17);
+            this.label1.Location = new System.Drawing.Point(36, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 2;
@@ -102,7 +104,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 96);
+            this.label3.Location = new System.Drawing.Point(36, 126);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 12);
             this.label3.TabIndex = 6;
@@ -110,7 +112,7 @@
             // 
             // txtResult
             // 
-            this.txtResult.Location = new System.Drawing.Point(86, 93);
+            this.txtResult.Location = new System.Drawing.Point(86, 123);
             this.txtResult.Name = "txtResult";
             this.txtResult.Size = new System.Drawing.Size(115, 21);
             this.txtResult.TabIndex = 7;
@@ -123,11 +125,11 @@
             this.myPlot.DateTimeToolTip = false;
             this.myPlot.Legend = null;
             this.myPlot.LegendZOrder = -1;
-            this.myPlot.Location = new System.Drawing.Point(0, 131);
+            this.myPlot.Location = new System.Drawing.Point(0, 212);
             this.myPlot.Name = "myPlot";
             this.myPlot.RightMenu = null;
             this.myPlot.ShowCoordinates = true;
-            this.myPlot.Size = new System.Drawing.Size(1110, 446);
+            this.myPlot.Size = new System.Drawing.Size(1110, 365);
             this.myPlot.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
             this.myPlot.TabIndex = 8;
             this.myPlot.Text = "plotSurface2D1";
@@ -162,14 +164,14 @@
             // 
             chartArea3.Name = "ChartArea1";
             this.chart2.ChartAreas.Add(chartArea3);
-            this.chart2.Location = new System.Drawing.Point(14, 166);
+            this.chart2.Location = new System.Drawing.Point(14, 200);
             this.chart2.Name = "chart2";
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
             series3.Name = "Series1";
             series3.YValuesPerPoint = 4;
             this.chart2.Series.Add(series3);
-            this.chart2.Size = new System.Drawing.Size(1096, 300);
+            this.chart2.Size = new System.Drawing.Size(1096, 266);
             this.chart2.TabIndex = 12;
             this.chart2.Text = "chart2";
             this.chart2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.chart2_MouseMove);
@@ -184,12 +186,31 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // txtSkipRate
+            // 
+            this.txtSkipRate.Location = new System.Drawing.Point(86, 89);
+            this.txtSkipRate.Name = "txtSkipRate";
+            this.txtSkipRate.Size = new System.Drawing.Size(115, 21);
+            this.txtSkipRate.TabIndex = 15;
+            this.txtSkipRate.Text = "1.1";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 92);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 12);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "最大波动";
+            // 
             // FrmWave
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1246, 620);
+            this.ClientSize = new System.Drawing.Size(338, 170);
+            this.Controls.Add(this.txtSkipRate);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -204,7 +225,8 @@
             this.Controls.Add(this.btnSelectFile);
             this.Controls.Add(this.chart2);
             this.Name = "FrmWave";
-            this.Text = "FrmWave";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -227,5 +249,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtSkipRate;
+        private System.Windows.Forms.Label label4;
     }
 }

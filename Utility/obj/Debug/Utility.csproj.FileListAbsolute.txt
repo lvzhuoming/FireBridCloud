@@ -7,4 +7,3 @@ D:\Code\FireBridCloud\Utility\bin\Debug\Utility.dll
 D:\Code\FireBridCloud\Utility\bin\Debug\Utility.pdb
 D:\Code\FireBridCloud\Utility\obj\Debug\Utility.dll
 D:\Code\FireBridCloud\Utility\obj\Debug\Utility.pdb
-D:\Code\FireBridCloud\Utility\obj\Debug\Utility.csprojResolveAssemblyReference.cache

@@ -2,3 +2,7 @@ C:\Users\Augurit2228\Desktop\FireBridCloud\ASP.NetForStock\ASP.NetForStock\bin\A
 C:\Users\Augurit2228\Desktop\FireBridCloud\ASP.NetForStock\ASP.NetForStock\bin\ASP.NetForStock.pdb
 C:\Users\Augurit2228\Desktop\FireBridCloud\ASP.NetForStock\ASP.NetForStock\obj\Debug\ASP.NetForStock.dll
 C:\Users\Augurit2228\Desktop\FireBridCloud\ASP.NetForStock\ASP.NetForStock\obj\Debug\ASP.NetForStock.pdb
+E:\MyCode\FireBridCloud\ASP.NetForStock\ASP.NetForStock\bin\ASP.NetForStock.dll
+E:\MyCode\FireBridCloud\ASP.NetForStock\ASP.NetForStock\bin\ASP.NetForStock.pdb
+E:\MyCode\FireBridCloud\ASP.NetForStock\ASP.NetForStock\obj\Debug\ASP.NetForStock.dll
+E:\MyCode\FireBridCloud\ASP.NetForStock\ASP.NetForStock\obj\Debug\ASP.NetForStock.pdb

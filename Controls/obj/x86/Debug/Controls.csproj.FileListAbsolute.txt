@@ -1,7 +1,7 @@
-D:\Code\FireBridCloud\Controls\obj\x86\Debug\FireBridCloud.CommonDataGridView.resources
-D:\Code\FireBridCloud\Controls\obj\x86\Debug\Controls.csproj.GenerateResource.Cache
 D:\Code\FireBridCloud\Controls\bin\Debug\Controls.dll
 D:\Code\FireBridCloud\Controls\bin\Debug\Controls.pdb
+D:\Code\FireBridCloud\Controls\obj\x86\Debug\FireBridCloud.CommonDataGridView.resources
+D:\Code\FireBridCloud\Controls\obj\x86\Debug\KLineControl.KLineControl.resources
+D:\Code\FireBridCloud\Controls\obj\x86\Debug\Controls.csproj.GenerateResource.Cache
 D:\Code\FireBridCloud\Controls\obj\x86\Debug\Controls.dll
 D:\Code\FireBridCloud\Controls\obj\x86\Debug\Controls.pdb
-D:\Code\FireBridCloud\Controls\obj\x86\Debug\KLineControl.KLineControl.resources

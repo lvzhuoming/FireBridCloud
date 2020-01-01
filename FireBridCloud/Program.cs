@@ -27,12 +27,14 @@ namespace FireBridCloud
                 return;
             }
 
-            if (!ConnetString.AccessExist())
-            {
-                MessageBox.Show("没有安装Access数据库！");
-                return;
-            }
-            FrmMain frm = new FrmMain();
+            //if (!ConnetString.AccessExist())
+            //{
+            //    MessageBox.Show("没有安装Access数据库！");
+
+            //    return;
+            //}
+            //FrmMain frm = new FrmMain();
+            FrmWave frm = new FrmWave();
             //Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine((System.ComponentModel.Component)frm);
             //skin.SkinFile = CommonConstString.sskPath; // 指定皮肤文件
             //skin.TitleFont = new System.Drawing.Font("微软雅黑", 10F);// 指定标题栏的Font。

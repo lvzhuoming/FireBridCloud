@@ -230,6 +230,27 @@ namespace FireBridCloud
             return stockHead;
         }
         /// <summary>
+        /// 判断股票是sz还是sh 下载历史数据用
+        /// </summary>
+        /// <param name="stockNo"></param>
+        /// <returns></returns>
+        public static string JudeShangHai(string stockNo)
+        {
+            if (string.IsNullOrEmpty(stockNo))
+                return string.Empty;
+            string stockHead = string.Empty;
+            string strFistNumber = stockNo.Substring(0, 1);
+            if (strFistNumber == 6.ToString() || stockNo == "000001")
+            {
+                stockHead = "0";
+            }
+            else if (strFistNumber == 3.ToString() || strFistNumber == 0.ToString())
+            {
+                stockHead = "1";
+            }
+            return stockHead;
+        }
+        /// <summary>
         /// 获取股票历史数据
         /// </summary>
         /// <param name="stockNo"></param>
@@ -239,11 +260,13 @@ namespace FireBridCloud
             string receivePath = CommonConstString.stockImagePath;
             string fileFullName = receivePath + stockNo + ".csv";
             DataTable dt = new DataTable();
-
+            File.Delete(fileFullName);
             if(!File.Exists(fileFullName))
             {
                 WebClient client = new WebClient();
-                string URLAddress = string.Format(@"http://table.finance.yahoo.com/table.csv?s={0}.{1}", stockNo, JudeStockNoHead(stockNo));
+                //string URLAddress = string.Format(@"http://table.finance.yahoo.com/table.csv?s={0}.{1}", stockNo, JudeStockNoHead(stockNo));            
+                string URLAddress =
+                    string.Format(@"http://quotes.money.163.com/service/chddata.html?code={0}{1}&start=19900902&end=21201108&fields=TCLOSE;HIGH;LOW;TOPEN;LCLOSE;CHG;PCHG;VOTURNOVER", JudeShangHai(stockNo), stockNo);            
                 client.DownloadFile(URLAddress, fileFullName);
             }
             dt = CSVFileHelper.OpenCSV(fileFullName);

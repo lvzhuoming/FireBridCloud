@@ -1,9 +1,0 @@
-D:\Code\FireBridCloud\DBUtility\bin\Release\DataConn.xml
-D:\Code\FireBridCloud\DBUtility\bin\Release\DBUtility.dll
-D:\Code\FireBridCloud\DBUtility\bin\Release\DBUtility.pdb
-D:\Code\FireBridCloud\DBUtility\bin\Release\Microsoft.Office.Interop.Access.dll
-D:\Code\FireBridCloud\DBUtility\bin\Release\Utility.dll
-D:\Code\FireBridCloud\DBUtility\bin\Release\Utility.pdb
-D:\Code\FireBridCloud\DBUtility\obj\Release\DBUtility.csprojResolveAssemblyReference.cache
-D:\Code\FireBridCloud\DBUtility\obj\Release\DBUtility.dll
-D:\Code\FireBridCloud\DBUtility\obj\Release\DBUtility.pdb

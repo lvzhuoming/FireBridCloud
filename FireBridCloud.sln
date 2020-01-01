@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Busine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{FCC62AFF-D145-40BC-8B84-A2A6D133A011}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBUtility", "DBUtility\DBUtility.csproj", "{82D65E28-213B-4552-94A4-0E1B32935942}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{2A430DD4-D771-4022-8C11-E8DBAF40165B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dll", "Dll\Dll.csproj", "{F222E45E-AA81-4F54-9E1B-4CAEBC228EEC}"
@@ -22,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "TestProject1\UnitTest.csproj", "{C9FB0907-928B-4B89-ABC3-506E53758BFC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChineseCalender", "ChineseCalender\ChineseCalender.csproj", "{096F007E-1179-42AC-8A92-C225EB042A2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBUtility", "DBUtility\DBUtility.csproj", "{82D65E28-213B-4552-94A4-0E1B32935942}"
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
@@ -66,16 +66,6 @@ Global
 		{FCC62AFF-D145-40BC-8B84-A2A6D133A011}.Release|Mixed Platforms.Build.0 = Release|x86
 		{FCC62AFF-D145-40BC-8B84-A2A6D133A011}.Release|x86.ActiveCfg = Release|x86
 		{FCC62AFF-D145-40BC-8B84-A2A6D133A011}.Release|x86.Build.0 = Release|x86
-		{82D65E28-213B-4552-94A4-0E1B32935942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{82D65E28-213B-4552-94A4-0E1B32935942}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{82D65E28-213B-4552-94A4-0E1B32935942}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{82D65E28-213B-4552-94A4-0E1B32935942}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{82D65E28-213B-4552-94A4-0E1B32935942}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{82D65E28-213B-4552-94A4-0E1B32935942}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{82D65E28-213B-4552-94A4-0E1B32935942}.Release|Any CPU.Build.0 = Release|Any CPU
-		{82D65E28-213B-4552-94A4-0E1B32935942}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{82D65E28-213B-4552-94A4-0E1B32935942}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{82D65E28-213B-4552-94A4-0E1B32935942}.Release|x86.ActiveCfg = Release|Any CPU
 		{2A430DD4-D771-4022-8C11-E8DBAF40165B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2A430DD4-D771-4022-8C11-E8DBAF40165B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A430DD4-D771-4022-8C11-E8DBAF40165B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -146,6 +136,16 @@ Global
 		{096F007E-1179-42AC-8A92-C225EB042A2E}.Release|Mixed Platforms.Build.0 = Release|x86
 		{096F007E-1179-42AC-8A92-C225EB042A2E}.Release|x86.ActiveCfg = Release|x86
 		{096F007E-1179-42AC-8A92-C225EB042A2E}.Release|x86.Build.0 = Release|x86
+		{82D65E28-213B-4552-94A4-0E1B32935942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82D65E28-213B-4552-94A4-0E1B32935942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82D65E28-213B-4552-94A4-0E1B32935942}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{82D65E28-213B-4552-94A4-0E1B32935942}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{82D65E28-213B-4552-94A4-0E1B32935942}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{82D65E28-213B-4552-94A4-0E1B32935942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82D65E28-213B-4552-94A4-0E1B32935942}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82D65E28-213B-4552-94A4-0E1B32935942}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{82D65E28-213B-4552-94A4-0E1B32935942}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{82D65E28-213B-4552-94A4-0E1B32935942}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

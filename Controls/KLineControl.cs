@@ -133,17 +133,26 @@ namespace KLineControl
         }
         private void Label_MouseEnter(object sender, EventArgs e)
         {
-            if(activeLable!=null)
+            try
             {
-                dicStockInfo[activeLable].IsMouseEntry = false;
-                activeLable.Refresh();
+                if (activeLable != null)
+                {
+                    if(dicStockInfo.ContainsKey(activeLable))
+                        dicStockInfo[activeLable].IsMouseEntry = false;
+                    activeLable.Refresh();
+                }
+                Label label = (Label)sender;
+                activeLable = label;
+                RefreshLabelData(label);
+                dicStockInfo[label].IsMouseEntry = true;
+                label.Focus();
+                label.Refresh();
             }
-            Label label = (Label )sender ;
-            activeLable = label;
-            RefreshLabelData(label);
-            dicStockInfo[label].IsMouseEntry = true;
-            label.Focus();
-            label.Refresh();
+            catch (Exception)
+            {
+                return;
+            }
+  
         }
         private void Label_MouseLeave(object sender, EventArgs e)
         {
@@ -162,10 +171,10 @@ namespace KLineControl
                 //清除Panel里的所有数据重绘
                 panel.Controls.Clear();
 
-                DataRow[] drArr = dt.Select("Volume>0 ");//查询
+                DataRow[] drArr = dt.Select("成交量>0 ");//查询
                 dt = null;
                 dt = drArr.CopyToDataTable();
-                dt.DefaultView.Sort = " Date asc ";
+                dt.DefaultView.Sort = " 日期 asc ";
                 dt = dt.DefaultView.ToTable();
                 //只绘panel能放得下的最近的数据
                 //最多能绘的个数
@@ -188,19 +197,19 @@ namespace KLineControl
                     DateTime date;
                     double open = 0.0, high = 0.0, low = 0.0, close = 0.0, adjClose = 0.0;
                     int volume = 0;
-                    if (DateTime.TryParse(dt.Rows[i]["Date"].ToString(), out date))
+                    if (DateTime.TryParse(dt.Rows[i]["日期"].ToString(), out date))
                         stockInfo.Date = date;
-                    if (double.TryParse(dt.Rows[i]["Open"].ToString(), out open))
+                    if (double.TryParse(dt.Rows[i]["开盘价"].ToString(), out open))
                         stockInfo.Open = Math.Round(open, 2, MidpointRounding.AwayFromZero);
-                    if (double.TryParse(dt.Rows[i]["High"].ToString(), out high))
+                    if (double.TryParse(dt.Rows[i]["最高价"].ToString(), out high))
                         stockInfo.High = Math.Round(high, 2, MidpointRounding.AwayFromZero);
-                    if (double.TryParse(dt.Rows[i]["Low"].ToString(), out low))
+                    if (double.TryParse(dt.Rows[i]["最低价"].ToString(), out low))
                         stockInfo.Low = Math.Round(low, 2, MidpointRounding.AwayFromZero);
-                    if (double.TryParse(dt.Rows[i]["Close"].ToString(), out close))
+                    if (double.TryParse(dt.Rows[i]["收盘价"].ToString(), out close))
                         stockInfo.Close = Math.Round(close, 2, MidpointRounding.AwayFromZero);
-                    if (double.TryParse(dt.Rows[i]["Adj Close"].ToString(), out adjClose))
+                    if (double.TryParse(dt.Rows[i]["收盘价"].ToString(), out adjClose))
                         stockInfo.AdjClsoe = Math.Round(adjClose, 2, MidpointRounding.AwayFromZero);
-                    if (int.TryParse(dt.Rows[i]["Volume"].ToString(), out volume))
+                    if (int.TryParse(dt.Rows[i]["成交量"].ToString(), out volume))
                         stockInfo.Volume = volume;
                     listStockInfo.Add(stockInfo);
                     int listStockInfoIndex = listStockInfo.IndexOf(stockInfo);
@@ -333,39 +342,56 @@ namespace KLineControl
 
         public void KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyData==Keys.Left)
+            try
             {
-                dicStockInfo[activeLable].IsMouseEntry = false;
-                activeLable.Refresh();
-                activeLable = dicStockInfo[activeLable].PreLabel;
-                RefreshLabelData(activeLable);
-                dicStockInfo[activeLable].IsMouseEntry = true;
-                activeLable.Refresh();
+                if (e.KeyData == Keys.Left)
+                {
+                    dicStockInfo[activeLable].IsMouseEntry = false;
+                    activeLable.Refresh();
+                    activeLable = dicStockInfo[activeLable].PreLabel;
+                    RefreshLabelData(activeLable);
+                    dicStockInfo[activeLable].IsMouseEntry = true;
+                    activeLable.Refresh();
+                }
+                else if (e.KeyData == Keys.Right)
+                {
+                    dicStockInfo[activeLable].IsMouseEntry = false;
+                    activeLable.Refresh();
+                    activeLable = dicStockInfo[activeLable].NextLabel;
+                    RefreshLabelData(activeLable);
+                    dicStockInfo[activeLable].IsMouseEntry = true;
+                    activeLable.Refresh();
+                }
             }
-            else if (e.KeyData == Keys.Right)
+            catch (Exception)
             {
-                dicStockInfo[activeLable].IsMouseEntry = false;
-                activeLable.Refresh();
-                activeLable = dicStockInfo[activeLable].NextLabel;
-                RefreshLabelData(activeLable);
-                dicStockInfo[activeLable].IsMouseEntry = true;
-                activeLable.Refresh();
+                return;
             }
+
         }
 
         private void RefreshLabelData(Label label)
         {
-            this.label1.Text = string.Format("收盘:{0}", dicStockInfo[label].AdjClsoe);
-            this.label2.Text = string.Format("日期:{0}", dicStockInfo[label].Date.ToShortDateString());
-            this.label3.Text = string.Format("开盘:{0}", dicStockInfo[label].Open);
-            this.label4.Text = string.Format("最高:{0}", dicStockInfo[label].High);
-            this.label5.Text = string.Format("最低:{0}", dicStockInfo[label].Low);
-            this.label6.Text = string.Format("天量:{0}", dicStockInfo[label].Volume);
-            int index = listStockInfo.IndexOf(dicStockInfo[label]);
-            if (index == 0)
-                this.label7.Text = string.Format("涨幅:{0}", "");
-            else
-                this.label7.Text = string.Format("涨幅:{0}%", Math.Round((dicStockInfo[label].AdjClsoe - listStockInfo[index - 1].AdjClsoe) / listStockInfo[index - 1].AdjClsoe * 100, 2, MidpointRounding.AwayFromZero));
+            try
+            {
+                this.label1.Text = string.Format("收盘:{0}", dicStockInfo[label].AdjClsoe);
+                this.label2.Text = string.Format("日期:{0}", dicStockInfo[label].Date.ToShortDateString());
+                this.label3.Text = string.Format("开盘:{0}", dicStockInfo[label].Open);
+                this.label4.Text = string.Format("最高:{0}", dicStockInfo[label].High);
+                this.label5.Text = string.Format("最低:{0}", dicStockInfo[label].Low);
+                this.label6.Text = string.Format("天量:{0}", dicStockInfo[label].Volume);
+                int index = listStockInfo.IndexOf(dicStockInfo[label]);
+                if (index == 0)
+                    this.label7.Text = string.Format("涨幅:{0}", "");
+                else
+                    this.label7.Text = string.Format("涨幅:{0}%", Math.Round((dicStockInfo[label].AdjClsoe - listStockInfo[index - 1].AdjClsoe) / listStockInfo[index - 1].AdjClsoe * 100, 2, MidpointRounding.AwayFromZero));
+            }
+            catch (Exception)
+            {
+
+                return;
+            }
+
         }
         
     }

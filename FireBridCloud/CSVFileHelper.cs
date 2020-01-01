@@ -87,7 +87,7 @@ namespace FireBridCloud
         /// <returns>返回读取了CSV数据的DataTable</returns>
         public static DataTable OpenCSV(string filePath)
         {
-            Encoding encoding = Encoding.ASCII; //Encoding.ASCII;//
+            Encoding encoding = Encoding.Default; //Encoding.ASCII;//
             DataTable dt = new DataTable();
             FileStream fs = new FileStream(filePath, System.IO.FileMode.Open, System.IO.FileAccess.Read);
 

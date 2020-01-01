@@ -72,7 +72,7 @@ namespace FireBridCloud
             if (day > dt.Rows.Count)
                 day = dt.Rows.Count;
             DataView dv = dt.DefaultView;
-            dv.Sort = " 时间 desc";
+            //dv.Sort = " 日期 desc";
             DataTable dtTimeDesc = dv.ToTable();
             //拿最高值和开盘值相比
             double high = 0;
@@ -85,21 +85,22 @@ namespace FireBridCloud
             List<int> listDay = new List<int>();
             for (int i = 0; i < dtTimeDesc.Rows.Count; i++)
             {
-                if (runRow > day)
+                if (runRow >= day)
                     break;
-                high = Convert.ToDouble(dtTimeDesc.Rows[i]["最高"].ToString());
-                low = Convert.ToDouble(dtTimeDesc.Rows[i]["最低"].ToString());
+                high = Convert.ToDouble(dtTimeDesc.Rows[i]["最高价"].ToString());
+                low = Convert.ToDouble(dtTimeDesc.Rows[i]["最低价"].ToString());
                 useDay = 0;
-
+                if (high <= 0.1)
+                    continue;
                 runRow++;
                 for (int j = i; j < dtTimeDesc.Rows.Count; j++)
                 {
                     useDay++;
-                    double highToday = Convert.ToDouble(dtTimeDesc.Rows[j]["最高"].ToString());
-                    double lowToday = Convert.ToDouble(dtTimeDesc.Rows[j]["最低"].ToString());
+                    double highToday = Convert.ToDouble(dtTimeDesc.Rows[j]["最高价"].ToString());
+                    double lowToday = Convert.ToDouble(dtTimeDesc.Rows[j]["最低价"].ToString());
                     if (highToday > high) high = highToday;
                     if (lowToday < low) low = lowToday;
-                    if (high / low >= 1.1)
+                    if (high / low >= double.Parse(txtSkipRate.Text))
                     {
                         listDay.Add(useDay);
                         totalDay += useDay;
@@ -118,9 +119,9 @@ namespace FireBridCloud
             //MyChart.DataSource = dt;
             DataView firstView = dt.DefaultView;
             //chart1.Series.Add("Default");
-            chart1.Series["Series1"].ChartType = SeriesChartType.FastLine;
-            chart1.Series["Series1"].Points.DataBindXY(firstView, "时间", firstView, "最高");
-            chart1.Refresh();
+            //chart1.Series["Series1"].ChartType = SeriesChartType.FastLine;
+            //chart1.Series["Series1"].Points.DataBindXY(firstView, "日期", firstView, "最高价");
+            //chart1.Refresh();
         }
 
         private void button1_Click(object sender, EventArgs e)
